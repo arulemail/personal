@@ -1,0 +1,74 @@
+.gradient-background {
+  background: linear-gradient(300deg, #5eff00, #ce2a76, #160449ef);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+  
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: "Montserrat-light"
+}
+
+body{ 
+  background-color: #dbfdf9;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 0;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #5eff00;
+  border-width: 3px;
+  width: 5%;
+  margin: 0 auto;
+ }
+
+h3 {
+  color: #c525b2;
+}
+
+/* .about-text {
+  text-align: justify;
+} */
+
+@media (max-width:622px) {
+  .col-auto{
+    text-align: center;
+    align-self: center;
+    margin: 5px !important;
+    padding: 0;
+  }
+  .profile-img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 0 !important;
+  }
+  .profile-skill, .profile-name{
+    margin-bottom: 5px !important;
+  }
+  .navbar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
